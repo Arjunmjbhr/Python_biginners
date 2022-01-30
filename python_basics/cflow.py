@@ -94,3 +94,11 @@ elif(condition2):
     Indented statement block for condition 2
 
 '''
+
+a = 30
+b = 40
+
+if a > b:
+    print(a, " is smaller than", b)
+elif b > a:
+    print(b, "is bigger than", a)
