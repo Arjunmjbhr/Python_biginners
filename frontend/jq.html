@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/jquery.mobile.min.css">
+    <title>Jquery Examples</title>
+
+    <style>
+
+        .container{
+            margin: 30px, 20px;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+ 
+ <div class="container">   
+     <h4 style="color: blueviolet;"> Click on Js for an alert message..</h4>
+<a href="#">Js</a>
+</div>
+
+
+
+<div class="container">
+    <h4 style="color: blueviolet;"> Click on the button </h4>
+    <h1 id="heading"> This is the largest Heading tag..</h1>
+    <h2>This is the second largest heading tag.</h2>
+    <h2>This is another heading tag</h2>
+    <p class="para">I am a paragraph</p>
+    <p class="para">I am another paragraph</p>
+  <center>  <button style="background-color: red; width: 130px; height: 50px; color: white; align-items: center;"> Click </button>
+  </center>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="scripts/jquery.min.js"></script>    
+<script src="scripts/jquery.min2.2.4.js"></script>
+<script src="scripts/jquery.mobile.min.js"></script>
+
+<script>
+    // alert message jquery script
+    $(document).ready(function() {
+
+    $("a").click(function(event){
+
+        alert("Thanks for visiting!");
+    })    
+
+    });
+
+
+    // hide jquery message..
+    $(document).ready(function() {
+
+        $("button").click(function(){
+
+            $("h2").hide();
+            // $("#heading").hide();
+            //$(".para").hide();
+           // $("*").hide();
+           // $("p:first").hide();
+          //  $(this).hide();
+
+        });
+
+
+
+    });
+</script>
+</body>
+</html>

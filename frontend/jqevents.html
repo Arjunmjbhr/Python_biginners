@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/jquery.mobile.min.css">
+<style>    
+.div{
+        width: 250px;
+        height: 180px;
+        margin: 10px;
+        padding: 20px;
+        background-color: blue;
+        border: 1px solid black;
+        font-size: 16pt;
+        color: #fff;
+    }
+
+</style>
+
+</head>
+<body>
+
+    
+<p> Move mouse on any squer below to see the result</p>
+
+<div class="div"> Click and Hopver Events</div>
+
+
+
+
+<script src="scripts/jquery.min.js"></script>    
+<script src="scripts/jquery.min2.2.4.js"></script>
+<script src="scripts/jquery.mobile.min.js"></script>
+<script>
+
+    $(document).ready(function(){
+
+        $('.div').hover(
+
+        function () {
+            $(this).css({"background-color":"red"});
+        },
+
+        function () {
+            $(this).css({"background-color":"blue"});
+        });
+
+        $('.div').dblclick(
+
+        function () {
+            $(this).css({"background-color":"green"});
+        });
+
+        $('.div').click(
+
+        function () {
+            $(this).css({"background-color":"purple"});
+        });
+
+//         $('.div').mouseenter(
+
+// function () {
+//     $(this).css({"background-color":"black"});
+// });
+
+// $('.div').mouseleave(
+
+// function () {
+//     $(this).css({"background-color":"orange"});
+// });
+
+
+});
+
+
+       
+</script>
+
+
+</body>
+</html>

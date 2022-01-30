@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+  color: white;
+}
+.jumbotron {
+  background-color: blue;
+  margin-top: 40px;
+}
+.jumbotron > h1 {
+  color: white;
+}
+h1 {
+  color: white;
+}
+
+.btn-default {
+  background-color: white;
+}
+
+.progress {
+  margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello World!</h1>   
+    <p class="para" style="font-size: 40px;">Today is a good !!!</p>
+    
+    <img src="images/1.jpg" alt="puppy images" style="height: 350px; width: 350px;">
+    
+    <ol id="quote">
+        <li>Demo1</li>
+        <li>Demo2</li>
+        <li>Demo3</li>
+    </ol>
+    
+    <a href="https://www.google.com/">Google</a>
+    
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ullam alias beatae soluta optio autem deserunt distinctio voluptate laboriosam perspiciatis 
+    maiores voluptatum at laborum, ea veniam aperiam omnis sit. Aliquam?</p>
+    
+    <button>Change Name</button>
+
+<script>
+
+    var dogImage = document.querySelector('img');
+
+    dogImage.onclick = function() {
+        var myImages = dogImage.getAttribute('src');
+        if(myImages === 'images/1.jpg'){
+            dogImage.setAttribute('src', 'images/2.jpeg');
+        }
+        else if(myImages === 'images/2.jpeg') {
+
+            dogImage.setAttribute('src','images/3.jpeg');
+        }
+        else {
+            dogImage.setAttribute('src','images/1.jpg');
+        }
+    }
+
+    // personalized welcome message!..
+
+
+    var nameButton = document.querySelector('button');
+    var myHeading = document.querySelector('h1');
+    var para = document.getElementsByClassName('');
+    function setUserName(){
+        
+    
+        var myName = window.prompt("Please Enter Your Name.!");
+        localStorage.setItem('name',myName);
+        myHeading.textContent = 'have a nice day, '+ myName;
+    }
+
+
+    if(!localStorage.getItem('name')) {
+        setUserName();
+    }
+    else {
+        var storedName = localStorage.getItem('name');
+        myHeading.textContent = 'Have a nice day, ' + storedName;
+    }
+
+    nameButton.onclick = function() {
+        
+        setUserName();
+    };
+</script>
+
+
+</body>
+</html>

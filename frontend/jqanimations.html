@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ ANIMATION</title>
+    <link rel="stylesheet" href="stylesheets/jquery.mobile.min.css">
+
+    <!-- scripts -->
+
+    <script src="scripts/jquery.min.js"></script>    
+    <script src="scripts/jquery.min2.2.4.js"></script>
+    <script src="scripts/jquery.mobile.min.js"></script>
+
+</head>
+<body>
+   
+
+    <button class="large" style="height: 40px; width: 150px;">Grow</button>
+    <button class="move" style="height: 40px; width: 150px;">Move</button>
+
+     
+    <div class="box" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    <div class="box2" style="background: #747474; height:100px;width:100px;position:absolute; margin-top: 120px;"></div>
+    <div class="box3" style="background: red; height:100px;width:100px;position:absolute; margin-top: 240px;"></div>
+    
+   
+
+    <script> 
+        $(document).ready(function(){
+          $(".large").click(function(){
+            $(".box").animate({
+              left: '250px',
+              height: '+=150px',
+              width: '+=150px'
+            });
+          });
+        });
+
+
+
+
+
+        $(document).ready(function(){
+  $(".move").click(function(){
+    $(".box2").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+    
+  });
+});
+        </script> 
+
+</body>
+</html>
